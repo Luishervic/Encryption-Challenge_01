@@ -1,0 +1,252 @@
+body{
+    zoom: 100%;
+    background: #E5E5E5;
+}
+
+.banner{
+    position: relative;
+    width: auto;
+    margin: 20px;
+}
+
+.contenido-principal{
+    width: 940px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+
+.input-texto{
+    margin: 60px auto;
+    display: inline-block;
+    width: 60%;
+    height: 70%; 
+}   
+
+.input-texto #input-encriptar{
+    font-size: 18px;
+    color: #0A3871;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #E5E5E5;
+}
+
+.input-texto ::placeholder{
+    font-size: 20px;
+    color: #0A3871;
+    
+}
+
+textarea:focus{
+    font-size: 18px;
+    color: #0A3871;
+}
+
+#aviso-formato{
+    color: #495057;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#encriptador{
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #0A3871;
+    margin-top: 5px;
+}
+
+#desencriptador{
+    background: #D8DFE8;
+    color: #0A3871;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin-left: 16px;
+}
+
+.visualizador{
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: 100%;
+    margin: 0 1.5%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    color: #495057;
+    font-size: 20;
+    text-align: center;
+}
+
+#salidatxt{
+    width: 90%;
+    height: 418px;
+    text-align: left;
+    margin: 20px 0 0 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.visualizador img{
+    position: relative;
+    margin: 5%;
+    width: 236px;
+    height: 204px;
+    bottom: -20%;
+}
+
+#advertencia_1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    margin-top: -40%;
+}
+
+#advertencia_2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+
+#btnCopiar{
+    display: none;
+    position: relative;
+    background: #D8DFE8;
+    color: #0A3871;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #0A3871;
+    margin: 40% auto;
+    border-radius: 24px;
+}
+
+#contacto{
+    height: auto;
+    margin-top: 1em;
+    padding: 50px;
+    text-align: center;
+    color: #495057;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#contacto a{
+    text-decoration: none;
+}
+
+#contacto img{
+    margin-top: 1em;
+    width: 35px;
+    height: 35px;
+    filter: grayscale(100%);  
+}
+
+#contacto :hover{
+    filter: none;
+    transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+    .contenido-principal{
+        width: 768px;
+        height: 500px;
+        margin: 0 auto;
+        
+    }
+    
+    .input-texto{
+        display: block;
+        width: auto;
+        margin: 15%
+    }
+    
+    #encriptador{
+        width: 250px;
+    }
+    
+    #desencriptador{
+        width: 250px;
+        margin-left: 30px;
+    }
+    
+    .visualizador{
+        display: block;
+        width: auto;
+        margin: 15%;
+        height: 60%;
+    }
+
+    #salidatxt{
+        height: 70%;
+    }
+
+    .visualizador img {
+        display: none;
+    }
+
+    .visualizador #advertencia_1{
+        margin-top: -15%;
+    }
+
+    #btnCopiar{
+        margin-top: 20%;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .contenido-principal{
+        width: 375px;
+        height: 500px;
+        text-align: center;
+    }
+    
+    .input-texto{
+        display: block;
+        width: auto;
+        margin: 15%
+    }
+    
+    #encriptador{
+        width: 250px;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+    
+    #desencriptador{
+        width: 250px;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+    
+    .visualizador{
+        display: block;
+        width: auto;
+        margin: 50% 15% 0 15%;
+        height: 50%;
+    }
+
+    .visualizador img {
+        display: none;
+    }
+
+    .visualizador #advertencia_1{
+        margin-top: -40%;
+    }
+
+    #btnCopiar{
+        margin-top: 45%;
+    }
+}

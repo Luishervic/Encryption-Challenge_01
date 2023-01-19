@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #1 - Encriptador</title>
+    <!--Importamos 3 archivos, 2 para los estilos y el final es el scrip de JavaScript-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="javascript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="banner"> 
+            <img class="logo-principal" src="imgs/alura_icon.png" alt="Logo alura">
+        </div>
+    </header>
+    
+    <main class="contenido-principal">
+        <div class="input-texto">
+            <textarea oninput="validarInput(event)" min="1" name="input-e" id="input-encriptar"  cols="1" rows="1" placeholder="Ingresa el texto aquí"></textarea>
+            <label id= "aviso-formato"for="input-e">⚠️ Solo letras minúsculas y sin acento</label><br>
+            <button id="encriptador">Encriptar</button>
+            <button id="desencriptador">Desencriptar</button>
+        </div>
+        <div class="visualizador">
+            <div id="salidatxt">
+                <img src="imgs/persona.png" alt="Dibujo de una persona sosteniendo una lupa">   
+            </div>
+            <p id="advertencia_1">Ningun mensaje fue encontrado</p>
+            <p id="advertencia_2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button id="btnCopiar">Copiar</button>
+        </div>
+
+        <div id = "contacto">
+            <p>By Luis :)</p>
+            <a href="https://twitter.com/Luishervic" target="_blank">
+                <img id="twitter-icon" src="imgs/twitter_icon.png" alt="Icono Twitter">
+            </a>
+    
+            <a href="https://github.com/Luishervic" target="_blank">
+                <img id="github-icon" src="imgs/github_icon.png" alt="Icono GitHub">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/luishervic/" target="_blank">
+                <img id="linkedin-icon" src="imgs/linkedin_icon.png" alt="Icono LinkedIn">
+            </a>
+        </div>
+    </main>
+</body>
+</html>
+
